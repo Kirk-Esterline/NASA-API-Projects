@@ -1,0 +1,6 @@
+NASA API Projects
+
+This folder is intended to be multiple projects within one folder and likely one JS script.
+
+Git
+- During developement and testing this project will only be version controlled locally.  When it is far enough along it will be pushed into a GitHub repo.

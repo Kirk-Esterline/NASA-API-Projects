@@ -14,15 +14,15 @@ function getFetch(){
         console.log(data.photos.length)
         
         
-        let startCarosel = setInterval(imgCarosel, 100)
         let count = 0
+        let timerID = setInterval(imgCarosel, 1500)
+        
         function imgCarosel() {
-          document.querySelector('img').src = data.photos[count].img_src
-          console.log(count)
-          count++
-        }
-        if(count === data.photos.length-1) {
-          clearInterval(startCarosel)
+            document.querySelector('img').src = data.photos[count].img_src;
+            count++
+            if(count === data.photos.length) {
+              clearInterval(timerID)
+            }
         }
 
 

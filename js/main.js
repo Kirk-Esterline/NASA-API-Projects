@@ -2,10 +2,13 @@
 document.querySelector('button').addEventListener('click', getFetch)
 
 function getFetch(){
-  const choice = document.querySelector('input').value
+  const roverName = document.querySelector('.rover-name').value
+  let roverNameUrl = roverName
+
+  const sol = document.querySelector('.sol').value
   const myKey = `0CeSttmV0IeGVJfqsMDiIgc1ITdbQXip8Vb6H24V`
-  const url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=503&camera=fhaz&api_key=${myKey}`
-  
+  const url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${roverNameUrl}/photos?sol=${sol}&api_key=${myKey}`
+
 
   fetch(url)
       .then(res => res.json()) // parse response as JSON

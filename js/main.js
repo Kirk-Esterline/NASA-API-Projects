@@ -2,18 +2,28 @@
 document.querySelector('button').addEventListener('click', getFetch)
 
 function getFetch(){
-  const roverName = document.querySelector('.rover-name').value
-  let roverNameUrl = roverName
-
+  let url
+  const roverName = document.querySelector('#rover-select').value
+  const cameraChoice = document.querySelector('#cameras-select').value
+  let cameraUrl 
   const sol = document.querySelector('.sol').value
   const myKey = `0CeSttmV0IeGVJfqsMDiIgc1ITdbQXip8Vb6H24V`
-  const url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${roverNameUrl}/photos?sol=${sol}&api_key=${myKey}`
+
+  if (cameraChoice === 'all') {
+    url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${roverName}/photos?sol=${sol}&api_key=${myKey}`
+  } else {
+    cameraUrl = cameraChoice
+    url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${roverName}/photos?sol=${sol}&camera=${cameraUrl}&api_key=${myKey}`
+  }
+
+  
 
 
   fetch(url)
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         console.log(data)
+  // add an edge case here.  Incase no images exist for that sol
         console.log(data.photos.length)
         
         

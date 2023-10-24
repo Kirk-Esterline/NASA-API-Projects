@@ -23,21 +23,25 @@ function getFetch(){
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         console.log(data)
-  // add an edge case here.  Incase no images exist for that sol
-        console.log(data.photos.length)
+       // console.log(data.photos.length)
+        if (data.photos.length < 1) {
+          document.querySelector('h2').innerText = 'Sorry, there are now images that match your search.'
+        } else {
         
-        
-        let count = 0
-        let timerID = setInterval(imgCarosel, 1500)
-        
-        function imgCarosel() {
-            document.querySelector('img').src = data.photos[count].img_src;
-            count++
-            if(count === data.photos.length) {
-              clearInterval(timerID)
-            }
-        }
+          let count = 0
+          let timerID = setInterval(imgCarosel, 1500)
+    
+      // Add some contorls for the carosel so that the user can pause on an image.
 
+          function imgCarosel() {
+              document.querySelector('img').src = data.photos[count].img_src;
+              count++
+              if(count === data.photos.length) {
+                clearInterval(timerID)
+              }
+          }
+
+      }
 
         // End of .then
       })

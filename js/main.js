@@ -27,7 +27,7 @@ function getFetch(){
         if (data.photos.length < 1) {
           document.querySelector('h2').innerText = 'Sorry, there are now images that match your search.'
         } else {
-        
+          console.log(data)
           let count = 0
           let timerID = setInterval(imgCarosel, 1500)
     

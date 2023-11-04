@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Mars Rover Pictures</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<header>
+			<a href="landing.html">Mars Art</a>
+			<a href="#">Disclaimer</a>
+			<a href="https://api.nasa.gov/">NASA-APIs</a>
+		</header>
+			<h1>Mars Rover Pictures</h1>
+			<label for="rover-select">Select Which Rover: </label>
+			<select name="rover-select" id="rover-select">
+				<option value="curiosity">Curiosity</option>
+				<option value="opportunity">Opportunity</option>
+				<option value="spirit">Spirit</option>
+			</select>
+			<label for="camera">Select Which Cameras: </label>
+			<select name="camera" id="cameras-select">
+				<option value="all">All Cameras</option>
+				<option value="fhaz">Front Hazard Avoidance Camera (FHAZ)</option>
+				<option value="rhaz">Rear Hazard Avoidance Camera (RHAZ)</option>
+				<option value="mast">Mast Camera (MAST)</option>
+				<option value="chemcam">Chemistry and Camera Complex (CHEMCAM)</option>
+				<option value="mahli">Mars Hand Lens Imager (MAHLI)</option>
+				<option value="navcam">Navigation Camera (NAVCAM)</option>
+				<option value="pancam">Panorama Camera (PANCAM)</option>
+				<option value="mardi">Mars Descent Imager (MARDI)</option>
+				<option value="minites">Miniature Thermal Emissions Spectrometer (Mini-TES)</option>
+			</select>
+			<!-- <input type="text" placeholder="Rover Name" class="rover-name" name="rover-name" value=""> -->
+			<label for="sol">Select Which Sol: </label>
+			<input type="number" class="sol" name="sol" value="">
+			<button type="button" name="button">Get Images</button>
+
+			<h2></h2>
+			<img src="https://mars.nasa.gov/mer/gallery/all/1/n/700/1N190321935EFF64KCP1590L0M1-BR.JPG" alt="">
+			<h3>Description</h3>
+
+			<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

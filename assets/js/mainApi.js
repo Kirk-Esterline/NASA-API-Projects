@@ -1,20 +1,22 @@
 //Example fetch using pokemonapi.co
-document.querySelector('button').addEventListener('click', getFetch)
+document.querySelector('#get-random-button').addEventListener('click', getFetch)
 
 function getFetch(){
-  let url
+  console.log('Click recorded')
+  
   const roverName = document.querySelector('#rover-select').value
   const cameraChoice = document.querySelector('#cameras-select').value
-  let cameraUrl 
+  // let cameraUrl  commented out because in this test it isn't being used
   const sol = document.querySelector('.sol').value
   const myKey = `0CeSttmV0IeGVJfqsMDiIgc1ITdbQXip8Vb6H24V`
+  let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&camera=NAVCAM&api_key=${myKey}`
 
-  if (cameraChoice === 'all') {
-    url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${roverName}/photos?sol=${sol}&api_key=${myKey}`
-  } else {
-    cameraUrl = cameraChoice
-    url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${roverName}/photos?sol=${sol}&camera=${cameraUrl}&api_key=${myKey}`
-  }
+  // if (cameraChoice === 'all') {
+  //   url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${roverName}/photos?sol=${sol}&api_key=${myKey}`
+  // } else {
+  //   cameraUrl = cameraChoice
+  //   url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${roverName}/photos?sol=${sol}&camera=${cameraUrl}&api_key=${myKey}`
+  // }
 
   
 
@@ -23,7 +25,7 @@ function getFetch(){
       .then(res => res.json()) // parse response as JSON
       .then(data => {
         console.log(data)
-       // console.log(data.photos.length)
+        console.log(data.photos.length)
         if (data.photos.length < 1) {
           document.querySelector('h2').innerText = 'Sorry, there are now images that match your search.'
         } else {
@@ -34,7 +36,7 @@ function getFetch(){
       // Add some contorls for the carosel so that the user can pause on an image.
 
           function imgCarosel() {
-              document.querySelector('img').src = data.photos[count].img_src;
+              document.getElementById('get-random-image').src = data.photos[count].img_src;
               count++
               if(count === data.photos.length) {
                 clearInterval(timerID)

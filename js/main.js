@@ -18,7 +18,7 @@ function getFetch(){
 
   
 
-
+// Get random image
   fetch(url)
       .then(res => res.json()) // parse response as JSON
       .then(data => {

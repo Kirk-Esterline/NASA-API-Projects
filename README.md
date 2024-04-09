@@ -29,10 +29,10 @@
 
 <!-- PROJECT LOGO -->
 <br />
-<div align="center">
+<!-- <div align="center">
   <a href="https://github.com/Kirk-Esterline/NASA-API-Projects">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+  </a> -->
 
 <h3 align="center">Mars Art</h3>
 
@@ -83,13 +83,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://mars-art.netlify.app/)
 
 This project is based on the publiclly available NASA APIs. By enteracting with this program we are interacting with the NASA Apis. Nothing is stored locally by this app, everything is called through the NASA APIs. There are many many more images than will likely be displayed here. The goal of this project is to show the beauty of the Marsian Surface and pictures may be curated to fit that goal. 
 
 This project is currently in the beginning stages. One of my goals is to keep the program light weight using primarily HTML and JS. This is a goal that may change in the future.  
 
- `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+ <!-- `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description` -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,7 +115,9 @@ This project is currently in the beginning stages. One of my goals is to keep th
 <!-- GETTING STARTED -->
 ## Getting Started
 
-Currently this program is not running live, and will only work locally. Instructions for how to run the program locally are included further down in this document.
+This program is now running live here: https://mars-art.netlify.app/ 
+
+Instructions for how to run the program locally are included further down in this document.
 
 ### Prerequisites
 
@@ -155,13 +157,16 @@ Use this space to show useful examples of how a project can be used. Additional 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Random Images
+- [X] Random Images (Implement April 2024)
       - An area of the landing page where a random image is selected for display.
       - And a page for selecting random images from different Rovers and cameras
 - [ ] Specific Images
       - A page for selecting specific images. This could be a loose selection, such as selecting rovers or cameras
 - [ ] Local storage
       - The ability to store images that the user would like to return to.
+- [ ] Rover and Camera Information
+      - Include an area on the landing page for explaining the history of rovers on Mars
+      - A gallery of the cameras the rovers carried and what their uses were.
 
 See the [open issues](https://github.com/Kirk-Esterline/NASA-API-Projects/issues) for a full list of proposed features (and known issues).
 
@@ -208,13 +213,13 @@ Project Link: [https://github.com/Kirk-Esterline/NASA-API-Projects](https://gith
 
 
 <!-- ACKNOWLEDGMENTS -->
-<!-- ## Acknowledgments
+## Acknowledgments
 
-* []()
-* []()
-* []()
+* [Chris Cerami](https://github.com/corincerami/mars-photo-api)
+<!-- * []()
+* []() -->
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p> -->
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 

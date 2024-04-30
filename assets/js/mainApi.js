@@ -19,8 +19,7 @@ function getRandom(){
         } else {
           let count = Math.floor(Math.random()*data.photos.length)
           document.getElementById('get-random-image').src = data.photos[count].img_src;
-          document.getElementById('random-photo-note').innerText = 'Here is an image captured by Curiosity on:';
-          document.getElementById('random-photo-date').innerText = data.photos[count].earth_date;
+          document.getElementById('random-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
           }
       })
       // End of .then

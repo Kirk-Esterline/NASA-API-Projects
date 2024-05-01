@@ -14,8 +14,9 @@ function getRandom(){
       .then(data => {
         console.log(data) // Console log for the time being to have access to image data
         console.log(data.photos.length)
-        if (data.photos.length < 1) {
-          //document.querySelector('h2').innerText = 'Sorry, there are now images that match your search.'
+        if (data.photos.length < 1) { // If there are no photos on that day, the function will call itself again
+          console.log('no photos on that day, ran the function again')
+          getRandom()
         } else {
           let count = Math.floor(Math.random()*data.photos.length)
           document.getElementById('get-random-image').src = data.photos[count].img_src;

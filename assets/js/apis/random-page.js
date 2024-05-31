@@ -7,7 +7,7 @@ window.onload = function() {
   getRandomOne()
 }
 
-document.querySelector('#first-random-button').addEventListener('click', getRandomOne())
+document.querySelector('#first-random-button').addEventListener('click', getRandomOne)
 // document.getElementById('second-random-button').addEventListener('click',getRandomTwo)
 // document.getElementById('third-random-button').addEventListener('click',getRandomThree)
 // document.getElementById('forth-random-button').addEventListener('click',getRandomFour)
@@ -25,11 +25,11 @@ function getRandomOne(){
     fetch(url)
         .then(res => res.json()) // parse response as JSON
         .then(data => {
-          console.log(data) // Console log for the time being to have access to image data
+          // console.log(data) // Console log for the time being to have access to image data
           console.log(data.photos.length)
           if (data.photos.length < 1) { // If there are no photos on that day, the function will call itself again
             console.log('no photos on that day, ran the function again')
-            getRandom()
+            getRandomOne()
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
             document.getElementById('first-random-image').src = data.photos[count].img_src;

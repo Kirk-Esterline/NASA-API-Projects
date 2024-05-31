@@ -4,8 +4,17 @@
 const myKey = `0CeSttmV0IeGVJfqsMDiIgc1ITdbQXip8Vb6H24V`
 
 window.onload = function() {
-    alert('This is a page of 6 randomly selected images')
+  getRandomOne()
 }
+
+document.querySelector('#first-random-button').addEventListener('click', getRandomOne())
+// document.getElementById('second-random-button').addEventListener('click',getRandomTwo)
+// document.getElementById('third-random-button').addEventListener('click',getRandomThree)
+// document.getElementById('forth-random-button').addEventListener('click',getRandomFour)
+// document.getElementById('fifth-random-button').addEventListener('click',getRandomFive)
+// document.getElementById('sixth-random-button').addEventListener('click',getRandomSix)
+
+
 
 //Fetch for the random image selector
 function getRandomOne(){
@@ -23,8 +32,8 @@ function getRandomOne(){
             getRandom()
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
-            document.getElementById('get-random-image').src = data.photos[count].img_src;
-            document.getElementById('random-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('first-random-image').src = data.photos[count].img_src;
+            document.getElementById('first-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then
@@ -34,7 +43,7 @@ function getRandomOne(){
         });
   }
 
-function getRandomtwo(){
+function getRandomTwo(){
  
     let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   

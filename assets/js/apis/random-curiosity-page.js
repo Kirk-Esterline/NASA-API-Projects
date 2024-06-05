@@ -5,11 +5,13 @@ const myKey = `0CeSttmV0IeGVJfqsMDiIgc1ITdbQXip8Vb6H24V`
 
 window.onload = function() {
   getRandomOne()
+  getRandomTwo()
+  getRandomThree()
 }
 
 document.querySelector('#first-random-button').addEventListener('click', getRandomOne)
-// document.getElementById('second-random-button').addEventListener('click',getRandomTwo)
-// document.getElementById('third-random-button').addEventListener('click',getRandomThree)
+document.getElementById('second-random-button').addEventListener('click',getRandomTwo)
+document.getElementById('third-random-button').addEventListener('click',getRandomThree)
 // document.getElementById('forth-random-button').addEventListener('click',getRandomFour)
 // document.getElementById('fifth-random-button').addEventListener('click',getRandomFive)
 // document.getElementById('sixth-random-button').addEventListener('click',getRandomSix)
@@ -51,15 +53,15 @@ function getRandomTwo(){
     fetch(url)
         .then(res => res.json()) // parse response as JSON
         .then(data => {
-          console.log(data) // Console log for the time being to have access to image data
+          // console.log(data) // Console log for the time being to have access to image data
           console.log(data.photos.length)
           if (data.photos.length < 1) { // If there are no photos on that day, the function will call itself again
             console.log('no photos on that day, ran the function again')
-            getRandom()
+            getRandomTwo()
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
-            document.getElementById('get-random-image').src = data.photos[count].img_src;
-            document.getElementById('random-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('second-random-image').src = data.photos[count].img_src;
+            document.getElementById('second-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then
@@ -81,11 +83,11 @@ function getRandomThree(){
           console.log(data.photos.length)
           if (data.photos.length < 1) { // If there are no photos on that day, the function will call itself again
             console.log('no photos on that day, ran the function again')
-            getRandom()
+            getRandomThree()
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
-            document.getElementById('get-random-image').src = data.photos[count].img_src;
-            document.getElementById('random-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('third-random-image').src = data.photos[count].img_src;
+            document.getElementById('third-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then

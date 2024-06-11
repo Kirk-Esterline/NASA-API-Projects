@@ -158,14 +158,14 @@ Use this space to show useful examples of how a project can be used. Additional 
 ## Roadmap
 
 - [X] Random Images (Implement April 2024)
-      - An area of the landing page where a random image is selected for display.
-      - Add functionality to display information about the image
-      - Refresh the image without needing to refresh the page
-- [ ] A page full of randomly selected images
-      - Make each section show 6 random images
-      - Have a button to retry each image
-      - Make the randomly selected images page extendable for future upgrades.
-      - And a page for selecting random images from different Rovers and cameras
+  - An area of the landing page where a random image is selected for display.
+  - Add functionality to display information about the image
+  - Refresh the image without needing to refresh the page
+- [X] A page full of randomly selected images
+      Make each section show 6 random images
+      Have a button to retry each image
+      Make the randomly selected images page extendable for future upgrades.
+- [ ] And a page for selecting random images from different Rovers and cameras
 - [ ] Specific Images
       - A page for selecting specific images. This could be a loose selection, such as selecting rovers or cameras
 - [ ] Local storage

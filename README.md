@@ -162,17 +162,17 @@ Use this space to show useful examples of how a project can be used. Additional 
   - Add functionality to display information about the image
   - Refresh the image without needing to refresh the page
 - [X] A page full of randomly selected images
-      Make each section show 6 random images
-      Have a button to retry each image
-      Make the randomly selected images page extendable for future upgrades.
-- [ ] And a page for selecting random images from different Rovers and cameras
+  - Make each section show 6 random images
+  - Have a button to retry each image
+  - Make the randomly selected images page extendable for future upgrades.
+- [ ] And functionality to choose which rover to see random images from.
 - [ ] Specific Images
-      - A page for selecting specific images. This could be a loose selection, such as selecting rovers or cameras
+  - A page for selecting specific images. This could be a loose selection, such as selecting rovers or cameras
 - [ ] Local storage
-      - The ability to store images that the user would like to return to.
+  - The ability to store images that the user would like to return to.
 - [ ] Rover and Camera Information
-      - Include an area on the landing page for explaining the history of rovers on Mars
-      - A gallery of the cameras the rovers carried and what their uses were.
+  - Include an area on the landing page for explaining the history of rovers on Mars
+  - A gallery of the cameras the rovers carried and what their uses were.
 
 See the [open issues](https://github.com/Kirk-Esterline/NASA-API-Projects/issues) for a full list of proposed features (and known issues).
 

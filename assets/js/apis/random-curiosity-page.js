@@ -8,14 +8,16 @@ window.onload = function() {
   getRandomTwo()
   getRandomThree()
   getRandomFour()
+  getRandomFive()
+  getRandomSix()
 }
 
 document.querySelector('#first-random-button').addEventListener('click', getRandomOne)
 document.getElementById('second-random-button').addEventListener('click',getRandomTwo)
 document.getElementById('third-random-button').addEventListener('click',getRandomThree)
 document.getElementById('forth-random-button').addEventListener('click',getRandomFour)
-// document.getElementById('fifth-random-button').addEventListener('click',getRandomFive)
-// document.getElementById('sixth-random-button').addEventListener('click',getRandomSix)
+document.getElementById('fifth-random-button').addEventListener('click',getRandomFive)
+document.getElementById('sixth-random-button').addEventListener('click',getRandomSix)
 
 
 
@@ -136,11 +138,11 @@ function getRandomFive(){
           console.log(data.photos.length)
           if (data.photos.length < 1) { // If there are no photos on that day, the function will call itself again
             console.log('no photos on that day, ran the function again')
-            getRandom()
+            getRandomFive()
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
-            document.getElementById('get-random-image').src = data.photos[count].img_src;
-            document.getElementById('random-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('fifth-random-image').src = data.photos[count].img_src;
+            document.getElementById('fifth-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then
@@ -162,11 +164,11 @@ function getRandomSix(){
           console.log(data.photos.length)
           if (data.photos.length < 1) { // If there are no photos on that day, the function will call itself again
             console.log('no photos on that day, ran the function again')
-            getRandom()
+            getRandomSix()
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
-            document.getElementById('get-random-image').src = data.photos[count].img_src;
-            document.getElementById('random-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('sixth-random-image').src = data.photos[count].img_src;
+            document.getElementById('sixth-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then

@@ -166,6 +166,7 @@ Use this space to show useful examples of how a project can be used. Additional 
   - Have a button to retry each image
   - Make the randomly selected images page extendable for future upgrades.
 - [ ] And functionality to choose which rover to see random images from.
+- Add links next to each rover name on the landing page that all rover and camera selection
 - [ ] Specific Images
   - A page for selecting specific images. This could be a loose selection, such as selecting rovers or cameras
 - [ ] Local storage

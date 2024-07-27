@@ -165,6 +165,7 @@ Use this space to show useful examples of how a project can be used. Additional 
   - Make each section show 6 random images
   - Have a button to retry each image
   - Make the randomly selected images page extendable for future upgrades.
+- [ ] Update the project so it uses a view engine such as EJS or handlebars to handle view changes rather than hard coded html pages.
 - [ ] And functionality to choose which rover to see random images from.
   - Add links next to each rover name on the landing page that all rover and camera selection
 - [ ] Specific Images

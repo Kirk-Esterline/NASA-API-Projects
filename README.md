@@ -89,6 +89,7 @@ This project is based on the publiclly available NASA APIs. By enteracting with 
 
 This project is currently in the beginning stages. One of my goals is to keep the program light weight using primarily HTML and JS. This is a goal that may change in the future.  
 
+* This goal is already changing. The more I work on this project the more I believe it is being held back by the basic tech stack I chose. *
  <!-- `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description` -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

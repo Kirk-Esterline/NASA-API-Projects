@@ -37,9 +37,11 @@ function getRandomOne(){
             getRandomOne()
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
-            document.getElementById('first-random-image').src = data.photos[count].img_src;
-            document.getElementById('first-random-image').alt = `An image from the surface of Mars captured by Curiosity on: ${data.photos[count].earth_date}`;
- document.getElementById('first-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            // document.getElementById('first-random-image').src = data.photos[count].img_src;
+            document.getElementById('first-random-image').innerHTML = `<img src="${data.photos[count].img_src}" alt="An image from the surface of Mars captured by Curiosity on: ${data.photos[count].earth_date}" />`;
+            // <img src="https://giphy.com/embed/y1ZBcOGOOtlpC" alt="Loading an image from the surface of Mars retrieved at random" />
+            // document.getElementById('first-random-image').alt = `An image from the surface of Mars captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('first-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;``
             }
         })
         // End of .then

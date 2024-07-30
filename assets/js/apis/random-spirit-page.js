@@ -23,7 +23,7 @@ document.getElementById('sixth-random-button').addEventListener('click',getRando
 //Fetch for the random image selector
 function getRandomOne(){
  
-    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
+    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
   // Get random image
     fetch(url)
@@ -37,8 +37,8 @@ function getRandomOne(){
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
             document.getElementById('first-random-image').src = data.photos[count].img_src;
-            document.getElementById('first-random-image').alt = `An image from the surface of Mars captured by Curiosity on: ${data.photos[count].earth_date}`;
- document.getElementById('first-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('first-random-image').alt = `An image from the surface of Mars captured by Spirit on: ${data.photos[count].earth_date}`;
+ document.getElementById('first-photo-note').innerText = `Here is an image captured by Spirit on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then
@@ -50,7 +50,7 @@ function getRandomOne(){
 
 function getRandomTwo(){
  
-    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
+    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
   // Get random image
     fetch(url)
@@ -64,7 +64,7 @@ function getRandomTwo(){
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
             document.getElementById('second-random-image').src = data.photos[count].img_src;
-            document.getElementById('second-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('second-photo-note').innerText = `Here is an image captured by Spirit on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then
@@ -76,7 +76,7 @@ function getRandomTwo(){
 
 function getRandomThree(){
  
-    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
+    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
   // Get random image
     fetch(url)
@@ -90,7 +90,7 @@ function getRandomThree(){
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
             document.getElementById('third-random-image').src = data.photos[count].img_src;
-            document.getElementById('third-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('third-photo-note').innerText = `Here is an image captured by Spirit on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then
@@ -102,7 +102,7 @@ function getRandomThree(){
 
 function getRandomFour(){
  
-    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
+    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
   // Get random image
     fetch(url)
@@ -116,7 +116,7 @@ function getRandomFour(){
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
             document.getElementById('forth-random-image').src = data.photos[count].img_src;
-            document.getElementById('forth-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('forth-photo-note').innerText = `Here is an image captured by Spirit on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then
@@ -128,7 +128,7 @@ function getRandomFour(){
 
 function getRandomFive(){
  
-    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
+    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
   // Get random image
     fetch(url)
@@ -142,7 +142,7 @@ function getRandomFive(){
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
             document.getElementById('fifth-random-image').src = data.photos[count].img_src;
-            document.getElementById('fifth-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('fifth-photo-note').innerText = `Here is an image captured by Spirit on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then
@@ -154,7 +154,7 @@ function getRandomFive(){
 
 function getRandomSix(){
  
-    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
+    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/spirit/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
   // Get random image
     fetch(url)
@@ -168,7 +168,7 @@ function getRandomSix(){
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
             document.getElementById('sixth-random-image').src = data.photos[count].img_src;
-            document.getElementById('sixth-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('sixth-photo-note').innerText = `Here is an image captured by Spirit on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then

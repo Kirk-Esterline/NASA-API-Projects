@@ -2639,6 +2639,10 @@ input, select, textarea {
 			border-radius: 4px;
 		}
 
+			.image .loading {
+				width: 50%;
+			}
+
 		.image.left, .image.right {
 			width: 40%;
 			max-width: 10rem;

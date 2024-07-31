@@ -34,13 +34,13 @@ function getRandomOne(){
           console.log(data.photos.length)
           if (data.photos.length < 1) { // If there are no photos on that day, the function will call itself again
             console.log('no photos on that day, ran the function again')
+            document.getElementById('first-random-image').src = 'images/load-37_256.gif'
             getRandomOne()
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
-            // document.getElementById('first-random-image').src = data.photos[count].img_src;
-            document.getElementById('first-random-image').innerHTML = `<img src="${data.photos[count].img_src}" alt="An image from the surface of Mars captured by Curiosity on: ${data.photos[count].earth_date}" />`;
-            // <img src="https://giphy.com/embed/y1ZBcOGOOtlpC" alt="Loading an image from the surface of Mars retrieved at random" />
-            // document.getElementById('first-random-image').alt = `An image from the surface of Mars captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('first-random-image').src = data.photos[count].img_src;
+            // document.getElementById('first-random-image').innerHTML = `<img src="${data.photos[count].img_src}" alt="An image from the surface of Mars captured by Curiosity on: ${data.photos[count].earth_date}" />`;
+            document.getElementById('first-random-image').alt = `An image from the surface of Mars captured by Curiosity on: ${data.photos[count].earth_date}`;
             document.getElementById('first-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;``
             }
         })

@@ -24,7 +24,7 @@ document.getElementById('sixth-random-button').addEventListener('click',getRando
 //Fetch for the random image selector
 function getRandomOne(){
  
-    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
+    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
     const loadingGif = 'images/loading-7528_128.gif'
 
   // Get random image
@@ -53,7 +53,7 @@ function getRandomOne(){
 
 function getRandomTwo(){
  
-    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
+    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
   // Get random image
     fetch(url)
@@ -80,7 +80,7 @@ function getRandomTwo(){
 
 function getRandomThree(){
  
-    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
+    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
   // Get random image
     fetch(url)
@@ -107,7 +107,7 @@ function getRandomThree(){
 
 function getRandomFour(){
  
-    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
+    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
   // Get random image
     fetch(url)
@@ -134,7 +134,7 @@ function getRandomFour(){
 
 function getRandomFive(){
  
-    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
+    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/opportunity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
   // Get random image
     fetch(url)

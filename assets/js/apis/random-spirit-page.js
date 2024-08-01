@@ -31,7 +31,8 @@ function getRandomOne(){
         .then(res => res.json()) // parse response as JSON
         .then(data => {
           // console.log(data) // Console log for the time being to have access to image data
-          console.log(data.photos.length)
+          console.log(data)
+          console.log(data.photos)
           if (data.photos.length < 1) { // If there are no photos on that day, the function will call itself again
             console.log('no photos on that day, ran the function again')
             document.getElementById('first-random-image').src = loadingGif

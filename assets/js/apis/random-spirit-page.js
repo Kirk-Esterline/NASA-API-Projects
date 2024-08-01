@@ -1,6 +1,7 @@
 // Create six functions for each section that will be called on page load.
 
 const myKey = `0CeSttmV0IeGVJfqsMDiIgc1ITdbQXip8Vb6H24V`
+const loadingGif = 'images/loading-7528_128.gif'
 
 window.onload = function() {
   getRandomOne()
@@ -33,6 +34,7 @@ function getRandomOne(){
           console.log(data.photos.length)
           if (data.photos.length < 1) { // If there are no photos on that day, the function will call itself again
             console.log('no photos on that day, ran the function again')
+            document.getElementById('first-random-image').src = loadingGif
             getRandomOne()
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
@@ -60,6 +62,7 @@ function getRandomTwo(){
           console.log(data.photos.length)
           if (data.photos.length < 1) { // If there are no photos on that day, the function will call itself again
             console.log('no photos on that day, ran the function again')
+            document.getElementById('second-random-image').src = loadingGif
             getRandomTwo()
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
@@ -86,6 +89,7 @@ function getRandomThree(){
           console.log(data.photos.length)
           if (data.photos.length < 1) { // If there are no photos on that day, the function will call itself again
             console.log('no photos on that day, ran the function again')
+            document.getElementById('third-random-image').src = loadingGif
             getRandomThree()
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
@@ -112,6 +116,7 @@ function getRandomFour(){
           console.log(data.photos.length)
           if (data.photos.length < 1) { // If there are no photos on that day, the function will call itself again
             console.log('no photos on that day, ran the function again')
+            document.getElementById('forth-random-image').src = loadingGif
             getRandomFour()
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
@@ -138,6 +143,7 @@ function getRandomFive(){
           console.log(data.photos.length)
           if (data.photos.length < 1) { // If there are no photos on that day, the function will call itself again
             console.log('no photos on that day, ran the function again')
+            document.getElementById('fifth-random-image').src = loadingGif
             getRandomFive()
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
@@ -164,6 +170,7 @@ function getRandomSix(){
           console.log(data.photos.length)
           if (data.photos.length < 1) { // If there are no photos on that day, the function will call itself again
             console.log('no photos on that day, ran the function again')
+            document.getElementById('sixth-random-image').src = loadingGif
             getRandomSix()
           } else {
             let count = Math.floor(Math.random()*data.photos.length)

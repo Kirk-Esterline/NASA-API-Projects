@@ -40,8 +40,8 @@ function getRandomOne(){
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
             document.getElementById('first-random-image').src = data.photos[count].img_src;
-            document.getElementById('first-random-image').alt = `An image from the surface of Mars captured by Curiosity on: ${data.photos[count].earth_date}`;
- document.getElementById('first-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('first-random-image').alt = `An image from the surface of Mars captured by Opportunity on: ${data.photos[count].earth_date}`;
+            document.getElementById('first-photo-note').innerText = `Here is an image captured by Opportunity on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then
@@ -68,7 +68,8 @@ function getRandomTwo(){
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
             document.getElementById('second-random-image').src = data.photos[count].img_src;
-            document.getElementById('second-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('first-random-image').alt = `An image from the surface of Mars captured by Opportunity on: ${data.photos[count].earth_date}`;
+            document.getElementById('second-photo-note').innerText = `Here is an image captured by Opportunity on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then
@@ -95,7 +96,8 @@ function getRandomThree(){
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
             document.getElementById('third-random-image').src = data.photos[count].img_src;
-            document.getElementById('third-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('first-random-image').alt = `An image from the surface of Mars captured by Opportunity on: ${data.photos[count].earth_date}`;
+            document.getElementById('third-photo-note').innerText = `Here is an image captured by Opportunity on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then
@@ -122,7 +124,8 @@ function getRandomFour(){
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
             document.getElementById('forth-random-image').src = data.photos[count].img_src;
-            document.getElementById('forth-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('first-random-image').alt = `An image from the surface of Mars captured by Opportunity on: ${data.photos[count].earth_date}`;
+            document.getElementById('forth-photo-note').innerText = `Here is an image captured by Opportunity on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then
@@ -149,7 +152,8 @@ function getRandomFive(){
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
             document.getElementById('fifth-random-image').src = data.photos[count].img_src;
-            document.getElementById('fifth-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('first-random-image').alt = `An image from the surface of Mars captured by Opportunity on: ${data.photos[count].earth_date}`;
+            document.getElementById('fifth-photo-note').innerText = `Here is an image captured by Opportunity on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then
@@ -176,7 +180,8 @@ function getRandomSix(){
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
             document.getElementById('sixth-random-image').src = data.photos[count].img_src;
-            document.getElementById('sixth-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('first-random-image').alt = `An image from the surface of Mars captured by Opportunity on: ${data.photos[count].earth_date}`;
+            document.getElementById('sixth-photo-note').innerText = `Here is an image captured by Opportunity on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then

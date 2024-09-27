@@ -5,3 +5,6 @@
     http://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01748/opgs/edr/ncam/NRB_552682049EDR_F0642088NCAM07753M_.JPG
 
 
+# Folders to Ignore
+.env
+node_modules

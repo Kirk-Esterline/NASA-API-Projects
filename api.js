@@ -1,9 +1,8 @@
-import express, { Router } from 'express';
-import serverless from "serverless-http";
-
+const express = require('express')
+const serverless = require("serverless-http")
+const router = express.Router();
 const api = express();
 
-const router = Router();
 
 api.use('../server/', router)
 

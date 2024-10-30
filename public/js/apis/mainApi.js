@@ -30,27 +30,3 @@ function getRandom(){
       });
 }
 
-// ******* Place holder expressions for use with future development *******
-
-// const roverName = document.querySelector('#rover-select').value
-// const cameraChoice = document.querySelector('#cameras-select').value
-// let cameraUrl  commented out because in this test it isn't being used (place holder ${Math.floor(Math.random()*2000)})
-// const sol = document.querySelector('.sol').value
-
-// if (cameraChoice === 'all') {
-//   url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${roverName}/photos?sol=${sol}&api_key=${myKey}`
-// } else {
-//   cameraUrl = cameraChoice
-//   url = `https://api.nasa.gov/mars-photos/api/v1/rovers/${roverName}/photos?sol=${sol}&camera=${cameraUrl}&api_key=${myKey}`
-// }
-
-// ****** Image Carosel functions ******
-//           let count = 0
-//           let timerID = setInterval(imgCarosel, 1500)
-//           function imgCarosel() {
-//               document.getElementById('get-random-image').src = data.photos[count].img_src;
-//               count++
-//               if(count === data.photos.length) {
-//                 clearInterval(timerID)
-//               }
-//             }

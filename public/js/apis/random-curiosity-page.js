@@ -21,9 +21,35 @@ document.getElementById('forth-random-button').addEventListener('click',getRando
 document.getElementById('fifth-random-button').addEventListener('click',getRandomFive)
 document.getElementById('sixth-random-button').addEventListener('click',getRandomSix)
 
+document.getElementById('FAHZ-one').addEventListener('click', () => getRandomOne('FAHZ'))
+document.querySelector('#RHAZ-one').addEventListener('click', () => getRandomOne('RHAZ'))
 document.querySelector('#MAST-one').addEventListener('click', () => getRandomOne('MAST'))
+document.querySelector('#NAVCAM-one').addEventListener('click', () => getRandomOne('NAVCAM'))
 
+// document.querySelector('#FAHZ-two').addEventListener('click', () => getRandomOne('FAHZ'))
+// document.querySelector('#RHAZ-two').addEventListener('click', () => getRandomOne('RHAZ'))
+// document.querySelector('#MAST-two').addEventListener('click', () => getRandomOne('MAST'))
+// document.querySelector('#NAVCAM-two').addEventListener('click', () => getRandomOne('NAVCAM'))
 
+// document.querySelector('#FAHZ-one').addEventListener('click', () => getRandomOne('FAHZ'))
+// document.querySelector('#RHAZ-one').addEventListener('click', () => getRandomOne('RHAZ'))
+// document.querySelector('#MAST-one').addEventListener('click', () => getRandomOne('MAST'))
+// document.querySelector('#NAVCAM-one').addEventListener('click', () => getRandomOne('NAVCAM'))
+
+// document.querySelector('#FAHZ-one').addEventListener('click', () => getRandomOne('FAHZ'))
+// document.querySelector('#RHAZ-one').addEventListener('click', () => getRandomOne('RHAZ'))
+// document.querySelector('#MAST-one').addEventListener('click', () => getRandomOne('MAST'))
+// document.querySelector('#NAVCAM-one').addEventListener('click', () => getRandomOne('NAVCAM'))
+
+// document.querySelector('#FAHZ-one').addEventListener('click', () => getRandomOne('FAHZ'))
+// document.querySelector('#RHAZ-one').addEventListener('click', () => getRandomOne('RHAZ'))
+// document.querySelector('#MAST-one').addEventListener('click', () => getRandomOne('MAST'))
+// document.querySelector('#NAVCAM-one').addEventListener('click', () => getRandomOne('NAVCAM'))
+
+// document.querySelector('#FAHZ-one').addEventListener('click', () => getRandomOne('FAHZ'))
+// document.querySelector('#RHAZ-one').addEventListener('click', () => getRandomOne('RHAZ'))
+// document.querySelector('#MAST-one').addEventListener('click', () => getRandomOne('MAST'))
+// document.querySelector('#NAVCAM-one').addEventListener('click', () => getRandomOne('NAVCAM'))
 
 //Fetch for the random image selector
 function getRandomOne(camera = 'NAVCAM'){
@@ -45,7 +71,7 @@ function getRandomOne(camera = 'NAVCAM'){
             document.getElementById('first-random-image').src = data.photos[count].img_src;
             // document.getElementById('first-random-image').innerHTML = `<img src="${data.photos[count].img_src}" alt="An image from the surface of Mars captured by Curiosity on: ${data.photos[count].earth_date}" />`;
             document.getElementById('first-random-image').alt = `An image from the surface of Mars captured by Curiosity on: ${data.photos[count].earth_date}`;
-            document.getElementById('first-photo-note').innerText = `Here is an image Curiosity's ${camera} on: ${data.photos[count].earth_date}`;``
+            document.getElementById('first-photo-note').innerText = `Here is an image Curiosity's ${camera} on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then

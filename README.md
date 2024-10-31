@@ -116,7 +116,7 @@ This project is currently in the beginning stages. One of my goals is to keep th
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This program is now running live here: https://mars-art.netlify.app/ 
+This program is now running live here: https://mars-art.onrender.com/ 
 
 Instructions for how to run the program locally are included further down in this document.
 

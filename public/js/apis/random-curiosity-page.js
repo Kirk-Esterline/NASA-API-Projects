@@ -83,7 +83,7 @@ function getRandomOne(camera = 'NAVCAM'){
   }
 
 function getRandomTwo(camera = 'NAVCAM'){
- 
+  document.getElementById('first-random-image').src = loadingGif
     let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
   // Get random image
@@ -110,7 +110,7 @@ function getRandomTwo(camera = 'NAVCAM'){
   }
 
 function getRandomThree(camera = 'NAVCAM'){
- 
+  document.getElementById('first-random-image').src = loadingGif
     let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
   // Get random image
@@ -137,7 +137,7 @@ function getRandomThree(camera = 'NAVCAM'){
   }
 
 function getRandomFour(camera = 'NAVCAM'){
- 
+  document.getElementById('first-random-image').src = loadingGif
     let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
   // Get random image
@@ -164,7 +164,7 @@ function getRandomFour(camera = 'NAVCAM'){
   }
 
 function getRandomFive(camera = 'NAVCAM'){
- 
+  document.getElementById('first-random-image').src = loadingGif
     let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
   // Get random image
@@ -191,7 +191,7 @@ function getRandomFive(camera = 'NAVCAM'){
   }
 
 function getRandomSix(camera = 'NAVCAM'){
- 
+  document.getElementById('first-random-image').src = loadingGif
     let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
   // Get random image

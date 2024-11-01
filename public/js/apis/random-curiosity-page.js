@@ -2,7 +2,8 @@
 // Create six functions for each section that will be called on page load.
 
 const myKey = `0CeSttmV0IeGVJfqsMDiIgc1ITdbQXip8Vb6H24V`
-const loadingGif = 'images/loading-7528_128.gif'
+const loadingGif = 'public/loading-7528_128.gif'
+
 
 window.onload = function() {
   getRandomOne()
@@ -20,12 +21,41 @@ document.getElementById('forth-random-button').addEventListener('click',getRando
 document.getElementById('fifth-random-button').addEventListener('click',getRandomFive)
 document.getElementById('sixth-random-button').addEventListener('click',getRandomSix)
 
+document.getElementById('FHAZ-one').addEventListener('click', () => getRandomOne('FHAZ'))
+document.querySelector('#RHAZ-one').addEventListener('click', () => getRandomOne('RHAZ'))
+document.querySelector('#MAST-one').addEventListener('click', () => getRandomOne('MAST'))
+document.querySelector('#NAVCAM-one').addEventListener('click', () => getRandomOne('NAVCAM'))
 
+document.querySelector('#FHAZ-two').addEventListener('click', () => getRandomTwo('FHAZ'))
+document.querySelector('#RHAZ-two').addEventListener('click', () => getRandomTwo('RHAZ'))
+document.querySelector('#MAST-two').addEventListener('click', () => getRandomTwo('MAST'))
+document.querySelector('#NAVCAM-two').addEventListener('click', () => getRandomTwo('NAVCAM'))
+
+document.querySelector('#FHAZ-three').addEventListener('click', () => getRandomThree('FHAZ'))
+document.querySelector('#RHAZ-three').addEventListener('click', () => getRandomThree('RHAZ'))
+document.querySelector('#MAST-three').addEventListener('click', () => getRandomThree('MAST'))
+document.querySelector('#NAVCAM-three').addEventListener('click', () => getRandomThree('NAVCAM'))
+
+document.querySelector('#FHAZ-four').addEventListener('click', () => getRandomFour('FHAZ'))
+document.querySelector('#RHAZ-four').addEventListener('click', () => getRandomFour('RHAZ'))
+document.querySelector('#MAST-four').addEventListener('click', () => getRandomFour('MAST'))
+document.querySelector('#NAVCAM-four').addEventListener('click', () => getRandomFour('NAVCAM'))
+
+document.querySelector('#FHAZ-five').addEventListener('click', () => getRandomFive('FHAZ'))
+document.querySelector('#RHAZ-five').addEventListener('click', () => getRandomFive('RHAZ'))
+document.querySelector('#MAST-five').addEventListener('click', () => getRandomFive('MAST'))
+document.querySelector('#NAVCAM-five').addEventListener('click', () => getRandomFive('NAVCAM'))
+
+document.querySelector('#FHAZ-six').addEventListener('click', () => getRandomSix('FHAZ'))
+document.querySelector('#RHAZ-six').addEventListener('click', () => getRandomSix('RHAZ'))
+document.querySelector('#MAST-six').addEventListener('click', () => getRandomSix('MAST'))
+document.querySelector('#NAVCAM-six').addEventListener('click', () => getRandomSix('NAVCAM'))
 
 //Fetch for the random image selector
-function getRandomOne(){
- 
-    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
+function getRandomOne(camera = 'NAVCAM'){
+    document.getElementById('first-random-image').src = loadingGif
+
+    let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=${camera}&api_key=${myKey}`
   
   // Get random image
     fetch(url)
@@ -42,7 +72,7 @@ function getRandomOne(){
             document.getElementById('first-random-image').src = data.photos[count].img_src;
             // document.getElementById('first-random-image').innerHTML = `<img src="${data.photos[count].img_src}" alt="An image from the surface of Mars captured by Curiosity on: ${data.photos[count].earth_date}" />`;
             document.getElementById('first-random-image').alt = `An image from the surface of Mars captured by Curiosity on: ${data.photos[count].earth_date}`;
-            document.getElementById('first-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;``
+            document.getElementById('first-photo-note').innerText = `Here is an image Curiosity's ${camera} camera on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then
@@ -52,7 +82,7 @@ function getRandomOne(){
         });
   }
 
-function getRandomTwo(){
+function getRandomTwo(camera = 'NAVCAM'){
  
     let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
@@ -69,7 +99,7 @@ function getRandomTwo(){
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
             document.getElementById('second-random-image').src = data.photos[count].img_src;
-            document.getElementById('second-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('second-photo-note').innerText = `Here is an image Curiosity's ${camera} camera on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then
@@ -79,7 +109,7 @@ function getRandomTwo(){
         });
   }
 
-function getRandomThree(){
+function getRandomThree(camera = 'NAVCAM'){
  
     let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
@@ -96,7 +126,7 @@ function getRandomThree(){
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
             document.getElementById('third-random-image').src = data.photos[count].img_src;
-            document.getElementById('third-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('third-photo-note').innerText = `Here is an image Curiosity's ${camera} camera on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then
@@ -106,7 +136,7 @@ function getRandomThree(){
         });
   }
 
-function getRandomFour(){
+function getRandomFour(camera = 'NAVCAM'){
  
     let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
@@ -123,7 +153,7 @@ function getRandomFour(){
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
             document.getElementById('forth-random-image').src = data.photos[count].img_src;
-            document.getElementById('forth-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('forth-photo-note').innerText = `Here is an image Curiosity's ${camera} camera on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then
@@ -133,7 +163,7 @@ function getRandomFour(){
         });
   }
 
-function getRandomFive(){
+function getRandomFive(camera = 'NAVCAM'){
  
     let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
@@ -150,7 +180,7 @@ function getRandomFive(){
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
             document.getElementById('fifth-random-image').src = data.photos[count].img_src;
-            document.getElementById('fifth-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('fifth-photo-note').innerText = `Here is an image Curiosity's ${camera} camera on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then
@@ -160,7 +190,7 @@ function getRandomFive(){
         });
   }
 
-function getRandomSix(){
+function getRandomSix(camera = 'NAVCAM'){
  
     let url = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=${Math.floor(Math.random()*2000)}&camera=NAVCAM&api_key=${myKey}`
   
@@ -177,7 +207,7 @@ function getRandomSix(){
           } else {
             let count = Math.floor(Math.random()*data.photos.length)
             document.getElementById('sixth-random-image').src = data.photos[count].img_src;
-            document.getElementById('sixth-photo-note').innerText = `Here is an image captured by Curiosity on: ${data.photos[count].earth_date}`;
+            document.getElementById('sixth-photo-note').innerText = `Here is an image Curiosity's ${camera} camera on: ${data.photos[count].earth_date}`;
             }
         })
         // End of .then

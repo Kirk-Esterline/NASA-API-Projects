@@ -100,6 +100,8 @@ This project is currently in the beginning stages. One of my goals is to keep th
 
 * HTML and CSS
 * JavaScript
+* Node.js
+* Express.js
 <!-- * [![Next][Next.js]][Next-url]
 * [![React][React.js]][React-url]
 * [![Vue][Vue.js]][Vue-url]
@@ -129,7 +131,7 @@ There are no heavy prerequisites at this time. A modern browser and a text edito
   npm install npm@latest -g
   ``` -->
 
-### Installation
+### Installation (Changes coming soon)
 
 1. Clone the repo
    ```sh

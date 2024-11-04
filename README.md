@@ -124,7 +124,7 @@ Instructions for how to run the program locally are included further down in thi
 
 ### Prerequisites
 
-There are no heavy prerequisites at this time. A modern browser and a text editor are all that you need to run this program locally.
+Node and Express will need to be installed to run this project locally. Additionally a modern browser and a text editor are all that you need to run this program locally.
 
 <!-- * npm
   ```sh
@@ -137,8 +137,10 @@ There are no heavy prerequisites at this time. A modern browser and a text edito
    ```sh
    git clone https://github.com/Kirk-Esterline/NASA-API-Projects.git
    ```
-2. Open the program in your bowser
-   This can be done by manually open the HTML file in your browser, or you can use a plug-in such as Go Live for VS Code
+2. Install the necessary dependencies
+
+3. Start the server locally and open the page in your bowser
+   This can be done by manually or using Nodmon if you prefer.
 
   That should be all you need to get this project running locally.
 

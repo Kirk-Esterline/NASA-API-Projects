@@ -4,7 +4,6 @@ const loadingGif = 'public/loading-7528_128.gif'
 
 // Event listener for the get random image button
 document.querySelector('#get-random-button').addEventListener('click', getRandom)
-document.querySelector('#MAST-random').addEventListener('click', () => getRandom('MAST'))
 
 //Fetch for the random image selector
 function getRandom(camera = 'NAVCAM'){

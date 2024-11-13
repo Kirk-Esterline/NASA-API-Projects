@@ -85,11 +85,9 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://mars-art.onrender.com/)
 
-This project is based on the publiclly available NASA APIs. By enteracting with this program we are interacting with the NASA Apis. Nothing is stored locally by this app, everything is called through the NASA APIs. There are many many more images than will likely be displayed here. The goal of this project is to show the beauty of the Marsian Surface and pictures may be curated to fit that goal. 
+This project leverages publicly available NASA APIs to showcase the beauty of the Martian surface. Interacting with this application connects directly with NASA's vast data repositories, dynamically fetched through NASA's APIs. While the app can display a multitude of images, it attempts to selectively curate those that best highlight the stunning features of Mars.
 
-This project is currently in the beginning stages. One of my goals is to keep the program light weight using primarily HTML and JS. This is a goal that may change in the future.  
-
-* This goal is already changing. The more I work on this project the more I believe it is being held back by the basic tech stack I chose. *
+Technologies used in this project include JavaScript for the core functionality, Node.js and Express.js for the backend infrastructure, EJS for templating, and CSS for styling.
  <!-- `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description` -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

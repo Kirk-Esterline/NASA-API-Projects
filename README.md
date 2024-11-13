@@ -168,18 +168,13 @@ Use this space to show useful examples of how a project can be used. Additional 
   - Make each section show 6 random images
   - Have a button to retry each image
   - Make the randomly selected images page extendable for future upgrades.
-- [ In Progress ] Update the project so it uses a view engine such as EJS or handlebars to handle view changes rather than hard coded html pages.
+- [X] Update the project so it uses a view engine such as EJS or handlebars to handle view changes rather than hard coded html pages.
   - Add Node, Express, and EJS
   - Develop a server and routes to handle the different API endpoints
-- [ ] And functionality to choose which rover to see random images from.
-  - Add links next to each rover name on the landing page that all rover and camera selection
 - [ ] Specific Images
   - A page for selecting specific images. This could be a loose selection, such as selecting rovers or cameras
 - [ ] Local storage
   - The ability to store images that the user would like to return to.
-- [ ] Rover and Camera Information
-  - Include an area on the landing page for explaining the history of rovers on Mars
-  - A gallery of the cameras the rovers carried and what their uses were.
 
 See the [open issues](https://github.com/Kirk-Esterline/NASA-API-Projects/issues) for a full list of proposed features (and known issues).
 
